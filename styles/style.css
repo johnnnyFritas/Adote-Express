@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&family=Poppins&display=swap');
+
+/* fontes e cores usadas na página toda */
+:root {
+    --fonte-primaria: 'Helvetica Neue', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-terciaria: 'Montserrat Alternates', sans-serif;
+    --fonte-quaternaria: 'Poppins', sans-serif;
+
+    --cor-primaria: #F1EAFF;
+    --cor-secundaria: #E5D4FF;
+    --cor-terciaria: #DCBFFF;
+    --cor-quaternaria: #D0A2F7;
+    --cor-quinaria: #190482;
+}
+/* fim das fontes e cores */
+
+* {
+    padding: 0;
+    margin: 0;
+
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #a886c7;
+
+    width: auto;
+}
+
+body {
+    background-color: var(--cor-primaria);
+
+    width: auto;
+}
+
+/* inicio da estilização do menu */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20rem;
+
+    padding-top: 3rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estiliza-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.junta-anc-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.junta-anc-img > a {
+    font-family: var(--fonte-quaternaria);
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--cor-quinaria);
+
+    transition: 1.2s;
+}
+
+.junta-anc-img> a:hover {
+    color: white;
+
+    transition: 1.2s;
+}
+
+.junta-anc-img > img {
+    cursor: pointer;
+}
+
+.seleciona-registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+
+    transition: 1s;
+}
+
+.seleciona-registro > a {
+    font-family: var(--fonte-quaternaria);
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--cor-quinaria);
+
+    transition: 1.2s;
+}
+
+.seleciona-registro > a:hover {
+    color: white;
+
+    transition: 1.2s;
+}
+
+.seleciona-registro > img {
+    cursor: pointer;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@keyframes sobe-pet {
+    0%{color: var(--cor-quinaria);font-size: 1.2rem;}
+    100%{color: rgba(0, 0, 0, 0);font-size: 0;}
+}
+
+.pet {
+    visibility: hidden;
+
+    animation: sobe-pet 0.8s;
+
+    color: var(--cor-quinaria);
+    font-size: 0;
+    font-family: var(--fonte-terciaria);
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: 1s;
+}
+
+@keyframes sobe-abrigo {
+    0%{color: var(--cor-quinaria);font-size: 1.2rem;}
+    100%{color: rgba(0, 0, 0, 0);font-size: 0;}
+}
+
+.abrigo {
+    visibility: hidden;
+
+    animation: sobe-abrigo 0.8s;
+
+    color: var(--cor-quinaria);
+    font-size: 0;
+    font-family: var(--fonte-terciaria);
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: 1s;
+}
+
+.login-cadastro {
+    display: flex;
+    gap: 2rem;
+
+    padding-bottom: 1rem;
+
+    transition: 1s;
+}
+
+.login-cadastro > a {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--cor-quinaria);
+
+    transition: 1s;
+}
+
+.login-cadastro > a:hover{
+    color: white;
+    transition: 1s;
+}
+
+.login-cadastro .ancora-login:not(:last-child) {
+    border-right: 1px solid white;
+    padding-right: 2rem;
+}
+
+/* área de animação do menu*/
+.desce-seta {
+    rotate: 180deg;
+
+    transition: 0.7s;
+}
+
+.sobe-seta {
+    rotate: 0deg;
+
+    transition: 0.7s;
+}
+
+@keyframes pet {
+    0%{color: rgba(0, 0, 0, 0);}
+    100%{color: var(--cor-quinaria);}
+}
+
+.desce-pet {
+    animation: pet 0.8s;
+
+    color: var(--cor-quinaria);
+    font-size: 1.2rem;
+    font-family: var(--fonte-terciaria);
+    font-weight: 500;
+    text-decoration: none;
+
+    padding-top: 1rem;
+
+    transition: 1s;
+}
+
+.desce-pet:hover {
+    color: white;
+    transition: 1s;
+}
+
+@keyframes abrigo {
+    0%{color: rgba(0, 0, 0, 0);}
+    100%{color: var(--cor-quinaria);}
+}
+
+.desce-abrigo {
+    animation: pet 0.8s;
+
+    color: var(--cor-quinaria);
+    font-size: 1.2rem;
+    font-family: var(--fonte-terciaria);
+    font-weight: 500;
+    text-decoration: none;
+
+    padding-bottom: 1rem;
+
+    transition: 1s;
+}
+
+.desce-abrigo:hover {
+    color: white;
+    transition: 1s;
+}
+
+.fixa-login {
+    padding-bottom: 6rem;
+
+    transition: 1s;
+}
+
+.fixa-animais {
+    padding-bottom: 5rem;
+
+    transition: 1s;
+}
+/* fim da área de animação do menu*/
+/* fim da estilização do menu */
+
+/* CRIAR OS SCRIPTS PRO MENU */

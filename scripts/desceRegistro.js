@@ -26,9 +26,11 @@ ancora.addEventListener('click', ()=> {
     switch(i % 2 != 0) {
         case true:
             desceRegistros();
+            console.log(i);
             break;
         case false:
             sobreRegistros();
+            console.log(i);
             break;
     }
 });
@@ -59,7 +61,9 @@ function sobreRegistros() {
     abrigo.classList.remove('desce-abrigo');
     abrigo.classList.add('abrigo');
 
-    login.classList.remove('fixa-login');
+    if(x % 2 == 0 && i % 2 == 0) {
+        login.classList.remove('fixa-login');
+    };
     
     animais.classList.remove('fixa-animais');
 }

@@ -7,20 +7,17 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <header>
-    <!-- /*CRIAR OS SCRIPTS PRO MENU*/ -->
     <section class="header">
         <nav class="menu">
             <div class="estiliza-menu">
-                <div class="seleciona-registro coluna">
-                    <div class="junta-anc-img">
+                <div class="seleciona-registro">
+                    <div id="seleciona-registro" class="junta-anc-img">
                         <a id="registros" href="#">Registros</a>
                         <img id="seta-circulada" src="assets/icons8-divisa-circulada-acima-48.png" alt="seta circulada">
                     </div>
-                    <div class="coluna">
-                        <div class="registro">
-                            <a class="pet" id="pet" href="#pagina">Registro de Pet</a>
-                            <a class="abrigo" id="abrigo" href="#">Registro de Abrigo</a>
-                        </div>
+                    <div class="registro">
+                        <a class="pet" id="pet" href="#pagina">Registro de Pet</a>
+                        <a class="abrigo" id="abrigo" href="#">Registro de Abrigo</a>
                     </div>
                 </div>
                 <div id="seleciona-animais" class="seleciona-registro">
@@ -28,17 +25,31 @@
                         <a id="registros-animais" href="#">Animais</a>
                         <img id="seta-circulada-animais" src="assets/icons8-divisa-circulada-acima-48.png" alt="seta circulada">
                     </div>
-                    <div class="coluna">
-                        <div class="registro">
-                            <a class="pet" id="pet" href="#pagina">Registro de Pet</a>
-                            <a class="abrigo" id="abrigo" href="#">Registro de Abrigo</a>
-                        </div>
+                    <div class="registro">
+                        <a class="cachorro" id="cachorro" href="#pagina">Cachorros</a>
+                        <a class="gato" id="gato" href="#">Gatos</a>
                     </div>
                 </div>
             </div>
         </nav>
         <div class="login-cadastro">
-            <a href="#" class="ancora-login">Login</a>
+            <!-- adicionar padding nos scripts -->
+            <div class="login">
+                <a href="#" class="ancora-login">Login</a>
+                <div class="esconde-login">
+                    <form class="form">
+                        <div class="form-div">
+                            <label for="nome">Usuário:</label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu usuário" minlength="4" autocomplete="username" required>
+                        </div>
+                        <div class="form-div">
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="5" autocomplete="current-password" required> 
+                        </div>
+                        <button class="button-submit" type="submit">Entrar</button>
+                    </form>
+                </div>
+            </div>
             <a href="#" class="ancora-cadastro">Cadastrar-se</a>
         </div>
     </section>
@@ -46,5 +57,8 @@
 <body>
 
     <script src="scripts/desceRegistro.js"></script>
+    <script src="scripts/desceAnimais.js"></script>
+    <script src="scripts/verifica.js"></script>
+    <script src="scripts/desceCadastro.js"></script>
 </body>
 </html>

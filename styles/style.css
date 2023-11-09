@@ -63,6 +63,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.6rem;
+
+    transition: 1s;
 }
 
 .junta-anc-img > a {
@@ -159,9 +161,36 @@ body {
     transition: 1s;
 }
 
+.cachorro {
+    visibility: hidden;
+
+    animation: sobe-abrigo 0.8s;
+
+    color: var(--cor-quinaria);
+    font-size: 0;
+    font-family: var(--fonte-terciaria);
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: 1s;
+}
+
+.gato {
+    visibility: hidden;
+
+    animation: sobe-abrigo 0.8s;
+
+    color: var(--cor-quinaria);
+    font-size: 0;
+    font-family: var(--fonte-terciaria);
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: 1s;
+}
+
 .login-cadastro {
     display: flex;
-    gap: 2rem;
 
     padding-bottom: 1rem;
 
@@ -182,9 +211,106 @@ body {
     transition: 1s;
 }
 
-.login-cadastro .ancora-login:not(:last-child) {
+.login .ancora-login:not(:last-child) {
     border-right: 1px solid white;
-    padding-right: 2rem;
+    padding-right: 3rem;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login > a {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--cor-quinaria);
+
+    transition: 1s;
+}
+
+.login > a:hover{
+    color: white;
+    transition: 1s;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+label {
+    font-family: var(--fonte-quaternaria);
+    color: var(--cor-quinaria);
+    text-align: center;
+    font-size: 0;
+}
+
+.form-div > input {
+    padding: 0;
+
+    font-family: var(--fonte-quaternaria);
+
+    border-radius: 6rem;
+    border: none;
+}
+
+input::placeholder {
+    font-size: 0;
+}
+
+#nome {
+    text-align: left;
+
+    font-size: 0;
+    font-family: var(--fonte-quaternaria);
+    font-weight: 400;
+    
+    visibility: hidden;
+
+    width: 0;
+}
+
+#senha {
+    font-size: 0;
+    font-family: var(--fonte-quaternaria);
+    font-weight: 400;
+
+    visibility: hidden;
+
+    width: 0;
+}
+
+.button-submit {
+    padding: 0;
+    border-radius: 1rem;
+    border: none;
+
+    color: white;
+    background-color: var(--cor-quinaria);
+
+    font-size: 0;
+    font-family: var(--fonte-quaternaria);
+    font-weight: 400;
+
+    visibility: hidden;
+
+    cursor: pointer;
+    pointer-events: fill;
 }
 
 /* área de animação do menu*/
@@ -248,8 +374,52 @@ body {
     transition: 1s;
 }
 
+.desce-cachorro {
+    animation: pet 0.8s;
+
+    color: var(--cor-quinaria);
+    font-size: 1.2rem;
+    font-family: var(--fonte-terciaria);
+    font-weight: 500;
+    text-decoration: none;
+
+    padding-top: 1rem;
+
+    transition: 1s;
+}
+
+.desce-cachorro:hover {
+    color: white;
+    transition: 1s;
+}
+
+.desce-gato {
+    animation: pet 0.8s;
+
+    color: var(--cor-quinaria);
+    font-size: 1.2rem;
+    font-family: var(--fonte-terciaria);
+    font-weight: 500;
+    text-decoration: none;
+
+    padding-top: 1rem;
+
+    transition: 1s;
+}
+
+.desce-gato:hover {
+    color: white;
+    transition: 1s;
+}
+
 .fixa-login {
     padding-bottom: 6rem;
+
+    transition: 1s;
+}
+
+.ajusta-login {
+    padding-bottom: 11rem;
 
     transition: 1s;
 }
@@ -259,7 +429,11 @@ body {
 
     transition: 1s;
 }
+
+.fixa-registro {
+    padding-bottom: 5rem;
+
+    transition: 1s;
+}
 /* fim da área de animação do menu*/
 /* fim da estilização do menu */
-
-/* CRIAR OS SCRIPTS PRO MENU */

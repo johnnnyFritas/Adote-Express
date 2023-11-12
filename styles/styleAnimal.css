@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&family=Poppins&display=swap');
+
+/* fontes e cores usadas na página toda */
+:root {
+    --fonte-primaria: 'Helvetica Neue', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-terciaria: 'Montserrat Alternates', sans-serif;
+    --fonte-quaternaria: 'Poppins', sans-serif;
+
+    --cor-primaria: #F1EAFF;
+    --cor-secundaria: #E5D4FF;
+    --cor-terciaria: #DCBFFF;
+    --cor-quaternaria: #D0A2F7;
+    --cor-quinaria: #190482;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    padding: 1rem;
+}
+
+.foto-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    font-size: 3rem;
+    font-family: var(--fonte-quaternaria);
+    color: var(--cor-primaria);
+}
+
+.foto-titulo > img {
+    border-radius: 20rem;
+}
+
+.descricoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.descricoes > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.descricoes-detalhadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.descricoes-detalhadas > h3 {
+    font-size: 1.8rem;
+    font-family: var(--fonte-quaternaria);
+    color: var(--cor-primaria);
+}
+
+.descricoes-detalhadas > span {
+    font-size: 1.2rem;
+    font-family: var(--fonte-quaternaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.divide-span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.borda-direita {
+    border-right: 1px solid white;
+    padding-right: 2rem;
+}
+
+.informacoes-cima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.ajusta-padding {
+    padding-right: 2rem;
+}

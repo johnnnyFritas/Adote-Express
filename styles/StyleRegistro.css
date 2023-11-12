@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&family=Poppins&display=swap');
+
+/* fontes e cores usadas na página toda */
+:root {
+    --fonte-primaria: 'Helvetica Neue', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-terciaria: 'Montserrat Alternates', sans-serif;
+    --fonte-quaternaria: 'Poppins', sans-serif;
+
+    --cor-primaria: #F1EAFF;
+    --cor-secundaria: #E5D4FF;
+    --cor-terciaria: #DCBFFF;
+    --cor-quaternaria: #D0A2F7;
+    --cor-quinaria: #190482;
+}
+
+/* Inicio da estilização do form de registro */
+.ancora-registro {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--cor-quinaria);
+
+    transition: 1s;
+}
+
+.ancora-registro:hover{
+    color: white;
+    transition: 1s;
+}
+
+
+.first-content-registra-pet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 3rem 0;
+
+    font-family: var(--fonte-quaternaria);
+    color: white;
+} 
+
+.titulo-registra-pet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    text-align: center;
+
+    width: 60%;
+}
+
+.titulo-registra-pet > h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.titulo-registra-pet > span {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.form-registra-pet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+
+    padding: 2rem 0;
+    background-color: #795b96;
+    border-radius: 2rem;
+
+    text-align: start;
+}
+
+.form-div-pet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    padding-left: 8rem;
+}
+
+.form-span {
+    font-size: 1.2rem;
+    color: var(--cor-quinaria);
+    width: 80%;
+    padding-left: 8rem;
+}
+
+#label-registro-pet {
+    font-size: 1.5rem;
+    color: white;
+
+    border-bottom: 1px solid white;
+}
+
+.form-div-pet > input {
+    width: 50rem;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    pointer-events: fill;
+
+    font-family: var(--fonte-quaternaria);
+    font-size: 1.5rem;
+}
+
+.form-div-pet > select {
+    width: 20rem;
+    padding: 0.3rem;
+    border-radius: 2rem;
+    border: none;
+    pointer-events: fill;
+
+    font-family: var(--fonte-quaternaria);
+    font-size: 1.5rem;
+}
+
+.form-div-pet > textarea {
+    width: 50rem;
+    height: 10rem;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    border: none;
+    pointer-events: fill;
+
+    font-family: var(--fonte-quaternaria);
+    font-size: 1.5rem;
+}
+
+.button-submit-registro-pet {
+    padding: 0.3rem 5rem;
+    margin-left: 8rem;
+    border-radius: 1rem;
+    border: none;
+
+    color: white;
+    background-color: var(--cor-quinaria);
+
+    font-size: 2rem;
+    font-family: var(--fonte-quaternaria);
+    font-weight: 400;
+
+    visibility: visible;
+
+    cursor: pointer;
+    pointer-events: fill;
+
+    transition: 1s;
+}
+
+.button-submit-registro-pet:hover {
+    background-color: white;
+    color: var(--cor-quinaria);
+
+    transition: 1s;
+}
+/* Fim da estilização do form de registro */

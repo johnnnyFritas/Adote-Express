@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - PetHelper</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/StyleRegistro.css">
+</head>
+<header>
+    <section class="header">
+        <img class="logo-ajuste" src="assets/Pet Helper.png" alt="Logo PetHelper">
+        <a class="ancora-registro" href="index.html">Home</a>
+        <div class="login-cadastro">
+            <div class="login">
+                <a href="#" class="ancora-login">Login</a>
+                    <form class="form">
+                        <div id="div1" class="form-div">
+                            <label id="label1" for="nome">Usuário:</label>
+                            <input class="nome" type="text" name="nome" id="nome" placeholder="Digite seu usuário" minlength="4" autocomplete="username" required>
+                        </div>
+                        <div id="div2" class="form-div">
+                            <label id="label2" for="senha">Senha:</label>
+                            <input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="5" autocomplete="current-password" required> 
+                        </div>
+                        <button class="button-submit" type="submit">Entrar</button>
+                    </form>          
+            </div>
+            <a href="#" class="ancora-cadastro">Cadastrar-se</a>
+        </div>
+    </section>
+</header>
+<body>
+    <main>
+        <section class="first-content-registra-pet">
+            <div class="titulo-registra-pet">
+                <h1>Formulário para preenchimento de regristro de Usuário</h1>
+                <span>(Informações adicionais serão pedidas ao longo da sua interação com atividades do site, como por exemplo adição de endereço etc)</span>
+            </div>
+                <form id="form-registra-pet" class="form-registra-pet">
+                    <span class="form-span">(Todas que estão marcadas com * têm obrigatoriedade de resposta)</span>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="nome-pet">Nome Completo <strong class="obrigatorio">*</strong></label>
+                        <input class="nome-pet" type="text" name="nome-pet" id="nome-pet" placeholder="Digite o seu nome completo" minlength="4">
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="especie-pet">Nome de usuário <strong class="obrigatorio">*</strong></label>
+                        <input class="especie-pet" type="text" name="especie-pet" id="especie-pet" placeholder="Digite o nome do seu usuário" minlength="4" autocomplete="username" required>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="idade-pet">Idade <strong class="obrigatorio">*</strong></label>
+                        <input class="idade-pet" type="number" name="idade-pet" id="idade-pet" placeholder="Digite a sua idade" minlength="1" maxlength="3">
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="cor-pet">Senha <strong class="obrigatorio">*</strong></label>
+                        <input class="cor-pet" type="password" name="cor-pet" id="cor-pet" placeholder="Digite a Senha Desejada" minlength="4" autocomplete="new-password" required>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="peso-pet">Confirme sua Senha <strong class="obrigatorio">*</strong></label>
+                        <input class="peso-pet" type="password" name="peso-pet" id="peso-pet" autocomplete="new-password" placeholder="Confirme Sua Senha" minlength="4">
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="saude-pet">Email <strong class="obrigatorio">*</strong></label>
+                        <input class="peso-pet" type="email" name="peso-pet" id="peso-pet" autocomplete="email" placeholder="Digite o seu email" minlength="4">
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="saude-pet">Confirme o Seu Email <strong class="obrigatorio">*</strong></label>
+                        <input class="peso-pet" type="email" name="peso-pet" id="peso-pet" autocomplete="email" placeholder="Confirme Seu Email" minlength="4">
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="foto-pet">Envie uma foto de perfil <strong class="obrigatorio">*</strong></label>
+                        <input class="foto-pet" type="file" name="foto-pet" id="foto-pet" accept="image/*,.pdf" multiple required>
+                    </div>
+                    <button class="button-submit-registro-pet" type="submit">Enviar!</button>
+                    <span class="form-span">(Informações adicionais serão pedidas ao longo da sua interação com atividades do site, como por exemplo adição de endereço etc)</span>
+                </form>
+        </section>
+    </main>
+    <script src="scripts/desceCadastro.js"></script>
+</body>
+</html>

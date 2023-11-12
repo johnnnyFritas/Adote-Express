@@ -8,57 +8,221 @@
 </head>
 <header>
     <section class="header">
-        <nav class="menu">
-            <div class="estiliza-menu">
-                <div class="seleciona-registro">
-                    <div id="seleciona-registro" class="junta-anc-img">
-                        <a id="registros" href="#">Registros</a>
-                        <img id="seta-circulada" src="assets/icons8-divisa-circulada-acima-48.png" alt="seta circulada">
-                    </div>
-                    <div class="registro">
-                        <a class="pet" id="pet" href="#pagina">Registro de Pet</a>
-                        <a class="abrigo" id="abrigo" href="#">Registro de Abrigo</a>
-                    </div>
-                </div>
-                <div id="seleciona-animais" class="seleciona-registro">
-                    <div class="junta-anc-img">
-                        <a id="registros-animais" href="#">Animais</a>
-                        <img id="seta-circulada-animais" src="assets/icons8-divisa-circulada-acima-48.png" alt="seta circulada">
-                    </div>
-                    <div class="registro">
-                        <a class="cachorro" id="cachorro" href="#pagina">Cachorros</a>
-                        <a class="gato" id="gato" href="#">Gatos</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <img class="logo-ajuste" src="assets/Pet Helper.png" alt="Logo PetHelper">
         <div class="login-cadastro">
-            <!-- adicionar padding nos scripts -->
             <div class="login">
                 <a href="#" class="ancora-login">Login</a>
-                <div class="esconde-login">
                     <form class="form">
-                        <div class="form-div">
-                            <label for="nome">Usuário:</label>
-                            <input type="text" name="nome" id="nome" placeholder="Digite seu usuário" minlength="4" autocomplete="username" required>
+                        <div id="div1" class="form-div">
+                            <label id="label1" for="nome">Usuário:</label>
+                            <input class="nome" type="text" name="nome" id="nome" placeholder="Digite seu usuário" minlength="4" autocomplete="username" required>
                         </div>
-                        <div class="form-div">
-                            <label for="senha">Senha:</label>
-                            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="5" autocomplete="current-password" required> 
+                        <div id="div2" class="form-div">
+                            <label id="label2" for="senha">Senha:</label>
+                            <input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="5" autocomplete="current-password" required> 
                         </div>
                         <button class="button-submit" type="submit">Entrar</button>
-                    </form>
-                </div>
+                    </form>          
             </div>
-            <a href="#" class="ancora-cadastro">Cadastrar-se</a>
+            <a id="cadastrar" href="cadastro.html" class="ancora-cadastro borda">Cadastrar-se</a>
+            <a href="#quem-somos" class="ancora-cadastro">Quem somos nós</a>
         </div>
     </section>
 </header>
 <body>
-
+    <main>
+        <section class="first-content">
+            <div class="estiliza-menu">
+                <div class="seleciona-registro">
+                    <div class="junta-anc-img">
+                        <a id="registros" href="#">Registros</a>
+                        <img id="seta-circulada" src="assets/icons8-divisa-circulada-acima-48.png" alt="seta circulada">
+                    </div>
+                    <div class="registro">
+                        <a class="pet" id="pet" href="registroPet.html">Registro de Pet</a>
+                        <a class="abrigo" id="abrigo" href="registroAbrigo.html">Registro de Abrigo</a>
+                    </div>
+                </div>
+                <div class="seleciona-registro">
+                    <div class="junta-anc-img">
+                        <a id="guias" href="#">Guias</a>
+                        <img id="seta-circulada-guias" src="assets/icons8-divisa-circulada-acima-48.png" alt="seta circulada">
+                    </div>
+                    <div class="registro">
+                        <a class="cuidados" id="cuidados" href="#guia-pet">Guia para cuidado do seu pet</a>
+                        <a class="adocoes" id="adocoes" href="#guia-adocao">Guia para adoção</a>
+                    </div>
+                </div>
+                <div class="seleciona-registro">
+                    <div class="junta-anc-img">
+                        <a id="perfis" href="#">Perfis</a>
+                        <img id="seta-circulada-perfis" src="assets/icons8-divisa-circulada-acima-48.png" alt="seta circulada">
+                    </div>
+                    <div class="registro">
+                        <a class="animais" id="animais" href="#">Perfis de Animais</a>
+                        <a class="adotantes" id="adotantes" href="#">Perfis de adotantes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pesquisa">
+            <div class="area-de-pesquisa">
+                <div class="searchbar">
+                    <label class="label-search" for="search">Pesquisa:</label>
+                    <input class="search" type="search" name="search" id="search" placeholder="Pesquise o Pet Ou o Abrigo Que Deseja Achar">
+                </div>
+                <img class="lupa" src="assets/icons8-lupa-64.png" alt="lupa">
+            </div>
+        </section>
+        <section class="second-content">
+            <h1 class="second-content-titulo">Avaliações:</h1>
+            <div class="avaliacoes">
+                <div class="avaliacoes-individuais">
+                    <h1 class="nome-avaliador">Anna Moreira</h1>
+                    <img class="foto-avaliacao" src="assets/Foto 1 avaliador.jpg" alt="foto do avaliador 1">
+                    <span class="avaliacao">"Eu usei a PetHelper para aprender sobre cuidados com meu pet e foi super incrível"</span>
+                </div>
+                <div class="avaliacoes-individuais">
+                    <h1 class="nome-avaliador">João Marcos</h1>
+                    <img class="foto-avaliacao" src="assets/Foto 2 avaliador.jpg" alt="Foto do avaliador 2">
+                    <span class="avaliacao">"Graças ao PetHelper eu consegui ajudar um cachorrinho abandonado na rua e agora ele se encontra em um abrigo"</span>
+                </div>
+                <div class="avaliacoes-individuais">
+                    <h1 class="nome-avaliador">Arthur Lacerda</h1>
+                    <img class="foto-avaliacao" src="assets/Foto 3 avaliador.jpg" alt="Foto do avaliador 3">
+                    <span class="avaliacao">"Com a ajuda da PetHelper eu pude finalmente adotar meu primeiro pet!"</span>
+                </div>
+            </div>
+        </section>
+        <section class="third-content">
+            <div class="secao-de-divisao">
+                <div class="quem-somos">
+                    <h1 id="quem-somos" class="quem-somos-titulo">Quem Somos:</h1>
+                    <div class="lista">
+                        <h2 class="lista-titulo">Principais Funções</h2>
+                        <ul>
+                            <li>
+                                Auxílio total para animais que foram abandonados nas ruas. Caso você encontre um, poderá nos contatar!!
+                            </li>
+                            <li>
+                                Realidade aumentada (AR): Oferecer a capacidade de visualizar animais em 3D usando AR, permitindo que os usuários vejam como um animal se encaixaria em sua casa antes de adotá-lo. <a href="index.html">Confira Já!</a>
+                            </li>
+                            <li>
+                                Realidade virtual (VR) para visitas virtuais: Oferecer visitas virtuais em 360 graus aos espaços onde os animais são abrigados, permitindo que os adotantes em potencial explorem o ambiente de maneira imersiva. <a href="index.html">Veja!!</a>
+                            </li>
+                            <li>
+                                Tanto adotantes, quanto abrigos podem se inscrever e aproveitar todos os nossos guias, e as nossas assistências! Oferecemos ajuda para pessoas, empresas e animais!
+                            </li>
+                            <li>
+                                Mensagens e notificações: Forneceremos apoio e suporte técnico para que adotantes em potencial entrem em contato com os cuidadores para agendar visitas e fazer perguntas.
+                            </li>
+                            <li>
+                                Gamificação da adoção: conquistas, prêmios e classificações, para tornar o processo de adoção mais envolvente e divertido. <a href="index.html">Sistema de pontuações.</a>
+                            </li>
+                            <li>
+                                Perfil de animais: Cada animal disponível para adoção deve tem um perfil detalhado que inclui fotos, descrição da personalidade, idade, histórico médico e outros detalhes relevantes.
+                            </li>
+                            <li>
+                                Os relatórios de adoção, caso seja feita conosco, será emitido após a finalização do processo de documentação e conhecimento dos adotantes!
+                            </li>
+                            <li>
+                                Para a avaliação de nossos serviços, será emitido um formulário para preenchimento opcional, após a utilização de qualquer serviço oferecido. Visando sempre melhorar nossos trabalhos.
+                            </li>
+                            <li>
+                                Sistema de mapeamento e localização de animais para possível adoção: Contamos com um sistema para ajudar a todos os que desejam ser pais de pet! <a href="index.html">Verifique as adoções possíveis em sua área.</a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="assets/Pet Helper.png" alt="logo da pet helper">
+            </div>
+        </section>
+        <section class="fourth-content">
+            <div class="fourth-content-texto">
+                <h1 id="guia-pet" class="fourth-content-titulo">Guia para cuidado do seu Pet</h1>
+                <a href="#" class="ancora-cuidado">Confira detalhadamente todas as etapas abaixo!</a>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Introdução:</h1>
+                    <span class="fourth-content-span">Cuidar de um animal de estimação é uma jornada recompensadora, repleta de alegrias e responsabilidades. Este guia abrangente oferece orientações para garantir que seu pet tenha uma vida saudável, feliz e equilibrada. Desde a alimentação até o bem-estar emocional, cada aspecto do cuidado é fundamental para promover uma relação duradoura e satisfatória entre você e seu fiel amigo.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Alimentação Saudável:</h1>
+                    <span class="fourth-content-span">A base de uma vida plena para o seu pet começa com uma dieta balanceada e nutritiva. Consulte um veterinário para determinar as necessidades alimentares específicas do seu animal, considerando fatores como idade, tamanho e condições de saúde. Escolha alimentos de alta qualidade, evitando ingredientes prejudiciais e garantindo que seu pet tenha acesso constante à água fresca.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Cuidados Veterinários:</h1>
+                    <span class="fourth-content-span">Manter as visitas regulares ao veterinário é crucial para prevenir e identificar problemas de saúde precocemente. Além das vacinações, discuta com o veterinário um plano de cuidados que inclua controle de parasitas, dentição e quaisquer preocupações específicas da raça. Fique atento a mudanças no comportamento, apetite ou atividade física, pois esses podem ser indicativos de problemas de saúde.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Exercício e Atividade:</h1>
+                    <span class="fourth-content-span">Proporcione ao seu pet oportunidades diárias para exercícios físicos e mentais. Passeios regulares, sessões de brincadeiras e a oferta de brinquedos interativos ajudam a manter a saúde e o equilíbrio emocional do animal. Lembre-se de que diferentes espécies e raças têm necessidades específicas, portanto, adapte o programa de exercícios de acordo com as características individuais do seu pet.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Higiene e Grooming:</h1>
+                    <span class="fourth-content-span">A prática de uma boa higiene é essencial para o conforto e saúde do seu pet. Escove o pelo regularmente, corte as unhas conforme necessário e mantenha a higiene oral, escovando os dentes do seu pet ou fornecendo brinquedos e alimentos projetados para promover a saúde dental. Banhos regulares também ajudam a evitar problemas de pele e mantêm seu animal de estimação limpo e feliz.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Bem-Estar Emocional:</h1>
+                    <span class="fourth-content-span">Além das necessidades físicas, é crucial atender às necessidades emocionais do seu pet. Dedique tempo para interações positivas, ofereça brinquedos desafiadores e crie um ambiente seguro e enriquecedor. Observe o comportamento do seu animal para identificar sinais de estresse ou desconforto e ajuste o ambiente conforme necessário.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Conclusão:</h1>
+                    <span class="fourth-content-span">Cuidar de um pet é uma jornada contínua que requer dedicação e atenção constante. Ao seguir este guia abrangente, você estará proporcionando ao seu animal de estimação os cuidados necessários para uma vida longa, saudável e feliz. Lembre-se sempre de que a relação entre você e seu pet é única, e o amor e carinho que você oferece são fundamentais para fortalecer esse vínculo especial.</span>
+                </div>
+            </div>
+            <img src="assets/Foto Cachorro.png" alt="Foto de um cachorro">
+        </section>
+        <section class="fourth-content">
+            <img src="assets/Foto cachorro 2.png" alt="Foto de um cachorro">
+            <div class="fourth-content-texto">
+                <h1 id="guia-adocao" class="fourth-content-titulo">Guia para Adoção</h1>
+                <a href="#" class="ancora-cuidado">Confira detalhadamente todas as etapas abaixo!</a>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Introdução:</h1>
+                    <span class="fourth-content-span">Adotar um animal de estimação é um ato nobre que traz alegria não apenas para o novo membro da família, mas também para quem decide abrir seu lar. Este guia visa fornecer orientações abrangentes para garantir uma adoção responsável, promovendo o bem-estar tanto do adotante quanto do animal. Desde a escolha até a integração no novo lar, cada etapa é crucial para estabelecer uma conexão duradoura.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Autoavaliação:</h1>
+                    <span class="fourth-content-span">Antes de começar o processo de adoção, avalie suas circunstâncias pessoais, estilo de vida e recursos disponíveis. Considere o espaço disponível em casa, o tempo dedicado aos cuidados do pet, e as necessidades específicas da espécie e raça que você está considerando. Certifique-se de que está pronto para assumir o compromisso de cuidar do animal durante toda a sua vida.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Pesquisa e Escolha Consciente:</h1>
+                    <span class="fourth-content-span">Pesquise diferentes espécies, raças e características individuais para encontrar um animal que se alinhe com seu estilo de vida. Considere adotar de abrigos locais, onde muitos animais esperam por um lar amoroso. Converse com os profissionais do abrigo para entender as necessidades específicas do animal, seu histórico de saúde e comportamento.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Visita ao Abrigo:</h1>
+                    <span class="fourth-content-span">Agende visitas a abrigos locais para interagir com os animais disponíveis para adoção. Observe o comportamento, níveis de energia e compatibilidade com sua família. Faça perguntas aos cuidadores sobre a história do animal, cuidados veterinários e qualquer informação relevante para garantir uma escolha informada.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Processo de Adoção:</h1>
+                    <span class="fourth-content-span">Ao decidir adotar, esteja preparado para fornecer informações sobre seu ambiente doméstico, experiência passada com animais e seus planos de cuidados futuros. Alguns abrigos podem exigir entrevistas ou visitas domiciliares para garantir que o animal será bem cuidado em seu novo lar.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Preparação Para a Chegada:</h1>
+                    <span class="fourth-content-span">Prepare sua casa antes da chegada do novo membro da família. Crie um espaço seguro e confortável, forneça os suprimentos essenciais, como comida, água, brinquedos e uma cama. Esteja ciente de que a adaptação pode levar algum tempo, então seja paciente e ofereça tranquilidade ao animal.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Cuidados Contínuos:</h1>
+                    <span class="fourth-content-span">Após a adoção, mantenha compromissos regulares com o veterinário, siga um cronograma de vacinações e forneça uma dieta equilibrada. Dedique tempo para construir um vínculo emocional com seu novo amigo, oferecendo amor, atenção e cuidados.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Comunidade e Suporte:</h1>
+                    <span class="fourth-content-span">Participe de grupos de adoção e comunidades online para compartilhar experiências e obter suporte. A troca de informações e conselhos pode ser valiosa, especialmente para novos proprietários de animais de estimação.</span>
+                </div>
+                <div class="fourth-content-div">
+                    <h1 class="introducao">Conclusão:</h1>
+                    <span class="fourth-content-span">A adoção responsável não apenas enriquece a vida do animal, mas também traz alegria e gratificação ao adotante. Ao seguir este guia, você estará preparado para proporcionar um ambiente amoroso e estável para o seu novo companheiro, estabelecendo uma parceria duradoura e gratificante.</span>
+                </div>
+            </div>
+        </section>
+        <section class="botao-contato">
+            <h1 class="titulo-botao">Se Interessou Por Algo ou Quer Mais Detalhes Sobre A Nossa Empresa?</h1>
+            <a href="index.html" class="chamada-de-acao">É Só Dar Um Latido!</a>
+        </section>
+    </main>
     <script src="scripts/desceRegistro.js"></script>
-    <script src="scripts/desceAnimais.js"></script>
-    <script src="scripts/verifica.js"></script>
+    <script src="scripts/desceGuias.js"></script>
     <script src="scripts/desceCadastro.js"></script>
+    <script src="scripts/descePerfis.js"></script>
 </body>
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Abrigo - PetHelper</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/StyleRegistro.css">
+</head>
+<header>
+    <section class="header">
+        <img class="logo-ajuste" src="assets/Pet Helper.png" alt="Logo PetHelper">
+        <a class="ancora-registro" href="index.html">Home</a>
+        <div class="login-cadastro">
+            <div class="login">
+                <a href="#" class="ancora-login">Login</a>
+                    <form class="form">
+                        <div id="div1" class="form-div">
+                            <label id="label1" for="nome">Usuário:</label>
+                            <input class="nome" type="text" name="nome" id="nome" placeholder="Digite seu usuário" minlength="4" autocomplete="username" required>
+                        </div>
+                        <div id="div2" class="form-div">
+                            <label id="label2" for="senha">Senha:</label>
+                            <input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="5" autocomplete="current-password" required> 
+                        </div>
+                        <button class="button-submit" type="submit">Entrar</button>
+                    </form>          
+            </div>
+            <a href="#" class="ancora-cadastro">Cadastrar-se</a>
+        </div>
+    </section>
+</header>
+<body>
+    <main>
+        <section class="first-content-registra-pet">
+            <div class="titulo-registra-pet">
+                <h1>Formulário de preenchimento para registro de Abrigo</h1>
+                <span>(Lembramos que todas as informações adicionadas aqui, serão revisadas e após o processo de verificação seu abrigo será registrado em nosso site!)</span>
+            </div>
+                <form id="form-registra-pet" class="form-registra-pet">
+                    <span class="form-span">(Todas que estão marcadas com * têm obrigatoriedade de resposta)</span>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="nome-pet">Nome do Abrigo <strong class="obrigatorio">*</strong></label>
+                        <input class="nome-pet" type="text" name="nome-pet" id="nome-pet" placeholder="Digite o nome do abrigo" minlength="4" required>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="especie-pet">Endereço <strong class="obrigatorio">*</strong></label>
+                        <input class="especie-pet" type="text" name="especie-pet" id="especie-pet" placeholder="Digite o endereço do abrigo" minlength="2" required>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="idade-pet">Email para contato <strong class="obrigatorio">*</strong></label>
+                        <input class="idade-pet" type="email" name="idade-pet" id="idade-pet" placeholder="Digite o email para contato" minlength="1" required>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="sexo-pet">Capacidade Máxima <strong class="obrigatorio">*</strong></label>
+                        <input class="idade-pet" type="number" name="idade-pet" id="idade-pet" placeholder="Digite a capacidade máxima do abrigo" minlength="1" required>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="cor-pet">Necessidades e Doações <strong class="obrigatorio">*</strong></label>
+                        <input class="cor-pet" type="text" name="cor-pet" id="cor-pet" placeholder="Itens necessários (ração, produtos de limpeza, cobertores)" minlength="4" required>
+                    </div>
+                    <div class="form-div-pet">
+                        <textarea cols="50" rows="20"class="comportamento-pet" type="text" name="comportamento-pet" id="comportamento-pet" placeholder="A respeito do item acima, escreva como as pessoas podem fazer doações ao abrigo" minlength="4" required></textarea>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="peso-pet">Redes Sociais <strong class="obrigatorio">*</strong></label>
+                        <input class="peso-pet" type="url" name="peso-pet" id="peso-pet" placeholder="Digite o link ou nome para as redes sociasi do abrigo" minlength="4" required>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="saude-pet">Informações sobre o responsável pelo abrigo <strong class="obrigatorio">*</strong></label>
+                        <textarea cols="50" rows="20"class="saude-pet" type="text" name="saude-pet" id="saude-pet" placeholder="Número de celular, Email de contato, Nome" minlength="4" required></textarea>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="comportamento-pet">Eventos e Programas <strong class="obrigatorio">*</strong></label>
+                        <textarea cols="50" rows="20"class="comportamento-pet" type="text" name="comportamento-pet" id="comportamento-pet" placeholder="Informações sobre eventos de adoção, programas de conscientização, campanhas de esterilização/castração, entre outros." minlength="4" required></textarea>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="foto-pet">Envie fotos de seu abrigo <strong class="obrigatorio">*</strong></label>
+                        <input class="foto-pet" type="file" name="foto-pet" id="foto-pet" accept="image/*,.pdf" multiple required>
+                    </div>
+                    <button class="button-submit-registro-pet" type="submit">Enviar!</button>
+                    <span class="form-span">(Lembrando que existirão contatos entre nossos funcionários com os fornecedores de dados e registradores de animais, para garantir a segurança de todos os lados!)</span>
+                </form>
+        </section>
+    </main>
+    <script src="scripts/desceCadastro.js"></script>
+</body>
+</html>

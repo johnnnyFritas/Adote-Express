@@ -3,9 +3,6 @@ const image = document.querySelector('#seta-circulada');
 const ancora = document.querySelector('#registros');
 const pet = document.querySelector('#pet');
 const abrigo = document.querySelector('#abrigo');
-const registro = document.querySelector('.registro');
-const login = document.querySelector('.login-cadastro');
-const animais = document.querySelector('#seleciona-animais');
 var i = 0;
 
 //eventos utilizados!
@@ -16,7 +13,7 @@ image.addEventListener('click', ()=> {
             desceRegistros();
             break;
         case false:
-            sobreRegistros();
+            sobeRegistros();
             break;
     }
 });
@@ -26,10 +23,9 @@ ancora.addEventListener('click', ()=> {
     switch(i % 2 != 0) {
         case true:
             desceRegistros();
-            console.log(i);
             break;
         case false:
-            sobreRegistros();
+            sobeRegistros();
             console.log(i);
             break;
     }
@@ -45,13 +41,9 @@ function desceRegistros() {
 
     abrigo.classList.remove('abrigo');
     abrigo.classList.add('desce-abrigo');
-
-    login.classList.add('fixa-login');
-
-    animais.classList.add('fixa-animais');
 }
 
-function sobreRegistros() {
+function sobeRegistros() {
     image.classList.remove('desce-seta');
     image.classList.add('sobe-seta');
 
@@ -60,10 +52,4 @@ function sobreRegistros() {
 
     abrigo.classList.remove('desce-abrigo');
     abrigo.classList.add('abrigo');
-
-    if(x % 2 == 0 && i % 2 == 0) {
-        login.classList.remove('fixa-login');
-    };
-    
-    animais.classList.remove('fixa-animais');
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pet - PetHelper</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/StyleRegistro.css">
+</head>
+<header>
+    <section class="header">
+        <img class="logo-ajuste" src="assets/Pet Helper.png" alt="Logo PetHelper">
+        <a class="ancora-registro" href="index.html">Home</a>
+        <div class="login-cadastro">
+            <div class="login">
+                <a href="#" class="ancora-login">Login</a>
+                    <form class="form">
+                        <div id="div1" class="form-div">
+                            <label id="label1" for="nome">Usuário:</label>
+                            <input class="nome" type="text" name="nome" id="nome" placeholder="Digite seu usuário" minlength="4" autocomplete="username" required>
+                        </div>
+                        <div id="div2" class="form-div">
+                            <label id="label2" for="senha">Senha:</label>
+                            <input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="5" autocomplete="current-password" required> 
+                        </div>
+                        <button class="button-submit" type="submit">Entrar</button>
+                    </form>          
+            </div>
+            <a href="#" class="ancora-cadastro">Cadastrar-se</a>
+        </div>
+    </section>
+</header>
+<body>
+    <main>
+        <section class="first-content-registra-pet">
+            <div class="titulo-registra-pet">
+                <h1>Formulário de preenchimento para registro de Pet</h1>
+                <span>(Lembramos da necessidade de estar com seu perfil criado e verificado em nosso site, para realização do registro do pet)</span>
+            </div>
+                <form id="form-registra-pet" class="form-registra-pet">
+                    <span class="form-span">(Todas que estão marcadas com * têm obrigatoriedade de resposta)</span>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="nome-pet">Nome</label>
+                        <input class="nome-pet" type="text" name="nome-pet" id="nome-pet" placeholder="Digite o nome do animal" minlength="4">
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="especie-pet">Espécie <strong class="obrigatorio">*</strong></label>
+                        <input class="especie-pet" type="text" name="especie-pet" id="especie-pet" placeholder="Digite a espécie do animal" minlength="2" required>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="idade-pet">Idade </label>
+                        <input class="idade-pet" type="number" name="idade-pet" id="idade-pet" placeholder="Digite a idade do animal" minlength="1" maxlength="2">
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="sexo-pet">Sexo <strong class="obrigatorio">*</strong></label>
+                        <select form="form-registra-pet" name="sexo-pet" id="sexo-pet" required>
+                            <option value="nao-especificado">Não especificado</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="cor-pet">Cor <strong class="obrigatorio">*</strong></label>
+                        <input class="cor-pet" type="text" name="cor-pet" id="cor-pet" placeholder="Digite a cor do animal" minlength="4" required>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="peso-pet">Peso (Em Kg)<strong class="obrigatorio">*</strong></label>
+                        <input class="peso-pet" type="number" name="peso-pet" id="peso-pet" placeholder="Digite o peso do animal" minlength="4">
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="saude-pet">Informações de Saúde <strong class="obrigatorio">*</strong></label>
+                        <textarea cols="50" rows="20"class="saude-pet" type="text" name="saude-pet" id="saude-pet" placeholder="Digite sobre a saúde do animal(Vacinas, Condições médicas relevantes, alergias etc)" minlength="4" required></textarea>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="comportamento-pet">Comportamento <strong class="obrigatorio">*</strong></label>
+                        <textarea cols="50" rows="20"class="comportamento-pet" type="text" name="comportamento-pet" id="comportamento-pet" placeholder="Digite sobre o comportamento do animal" minlength="4" required></textarea>
+                    </div>
+                    <div class="form-div-pet">
+                        <label id="label-registro-pet" for="foto-pet">Envie uma foto do seu amigão <strong class="obrigatorio">*</strong></label>
+                        <input class="foto-pet" type="file" name="foto-pet" id="foto-pet" accept="image/*,.pdf" multiple required>
+                    </div>
+                    <button class="button-submit-registro-pet" type="submit">Enviar!</button>
+                    <span class="form-span">(Lembrando que existirão contatos entre nossos funcionários com os fornecedores de dados e registradores de animais, para garantir a segurança de todos os lados!)</span>
+                </form>
+        </section>
+    </main>
+    <script src="scripts/desceCadastro.js"></script>
+</body>
+</html>

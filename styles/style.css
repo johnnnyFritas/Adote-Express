@@ -449,6 +449,20 @@ input::placeholder {
     transition: 1s;
 }
 
+.perfil-abrigo {
+    visibility: hidden;
+
+    animation: sobe-abrigo 0.8s;
+
+    color: var(--cor-quinaria);
+    font-size: 0;
+    font-family: var(--fonte-terciaria);
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: 1s;
+}
+
 /* Ajustes e animações do first-content */
 
 .desce-seta {
@@ -597,6 +611,25 @@ input::placeholder {
     transition: 1s;
 }
 
+.desce-perfil-abrigo {
+    animation: guias 0.8s;
+
+    color: var(--cor-quinaria);
+    font-size: 1.2rem;
+    font-family: var(--fonte-terciaria);
+    font-weight: 500;
+    text-decoration: none;
+
+    padding-top: 1rem;
+
+    transition: 1s;
+}
+
+.desce-perfil-abrigo:hover {
+    color: white;
+    transition: 1s;
+}
+
 /* Fim dos ajustes e animações do first-content */
 /* Fim da estilização do first-content */
 
@@ -713,11 +746,11 @@ input::placeholder {
 
 /* Inicio da estilização do third-content */
 .third-content {
-    padding: 10rem 10rem;
+    padding: 10rem 0;
 }
 
 .secao-de-divisao {
-    padding: 4rem 8rem;
+    padding: 4rem 2rem;
 
     border-radius: 4rem;
 
@@ -816,6 +849,7 @@ li > a:hover {
     font-size: 3rem;
     font-weight: 400;
     color: white;
+    text-align: center;
 }
 
 .fourth-content-div {
@@ -843,6 +877,7 @@ li > a:hover {
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
     border-radius: 2rem;
+    text-align: center;
 
     transition: 1s;
 }

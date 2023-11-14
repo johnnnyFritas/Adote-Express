@@ -20,8 +20,6 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
-
-    padding: 1rem;
 }
 
 .foto-titulo {
@@ -36,15 +34,16 @@
     color: var(--cor-primaria);
 }
 
-.foto-titulo > img {
+.foto-animal {
     border-radius: 20rem;
 }
 
 .descricoes {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 10rem;
 }
 
 .descricoes > div {
@@ -61,6 +60,8 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    text-align: center;
 }
 
 .descricoes-detalhadas > h3 {
@@ -76,6 +77,26 @@
     text-align: center;
 }
 
+.descricoes-detalhadas > span > a{
+    font-size: 1.2rem;
+    font-family: var(--fonte-quaternaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    text-decoration: none;
+
+    transition: 1s;
+}
+
+.descricoes-detalhadas > span > a:hover{
+    font-size: 1.2rem;
+    font-family: var(--fonte-quaternaria);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    transition: 1s;
+}
+
 .divide-span {
     display: flex;
     flex-direction: column;
@@ -84,18 +105,39 @@
     gap: 1rem;
 }
 
-.borda-direita {
-    border-right: 1px solid white;
-    padding-right: 2rem;
-}
-
 .informacoes-cima {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
 }
 
-.ajusta-padding {
-    padding-right: 2rem;
+.foto-usuario {
+    width: 50%;
+    border-radius: 20rem;
+}
+
+.divide-span > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.acesso > div > h1 {
+    font-size: 2rem;
+    color: var(--cor-primaria);
+}
+
+.div2 {
+    width: 80%;
+}
+
+.gap-ajuste {
+    gap: 1rem;
+}
+
+.padding-ajuste-abrigo {
+    padding: 5rem 2rem;
 }

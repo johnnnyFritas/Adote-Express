@@ -39,6 +39,9 @@ function descePerfis() {
 
     adotantes.classList.remove('adotantes');
     adotantes.classList.add('desce-adotantes');
+
+    pefilAbrigo.classList.remove('perfil-abrigo');
+    pefilAbrigo.classList.add('desce-perfil-abrigo');
 }
 
 function sobePerfis() {
@@ -50,4 +53,7 @@ function sobePerfis() {
 
     adotantes.classList.remove('desce-adotantes');
     adotantes.classList.add('adotantes');
+
+    pefilAbrigo.classList.add('perfil-abrigo');
+    pefilAbrigo.classList.remove('desce-perfil-abrigo');
 }

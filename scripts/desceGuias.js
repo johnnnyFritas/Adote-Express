@@ -3,6 +3,7 @@ const cuidados = document.querySelector('#cuidados');
 const adocoes = document.querySelector('#adocoes');
 const guias = document.querySelector('#guias');
 const imagemGuias = document.querySelector('#seta-circulada-guias');
+const pefilAbrigo = document.querySelector('#perfil-abrigo');
 var y = 0;
 
 //eventos utilizados!

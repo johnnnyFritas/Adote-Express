@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&family=Poppins&display=swap');
+
+/* fontes e cores usadas na página toda */
+:root {
+    --fonte-primaria: 'Helvetica Neue', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-terciaria: 'Montserrat Alternates', sans-serif;
+    --fonte-quaternaria: 'Poppins', sans-serif;
+
+    --cor-primaria: #F1EAFF;
+    --cor-secundaria: #E5D4FF;
+    --cor-terciaria: #DCBFFF;
+    --cor-quaternaria: #D0A2F7;
+    --cor-quinaria: #190482;
+}
+/* fim das fontes e cores */
+
+.centraliza {
+    text-align: center;
+}
+
+.estiliza-span {
+    font-size: 1.6rem;
+    font-family: var(--fonte-quaternaria);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+.titulo-ar {
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-family: var(--fonte-quaternaria);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+.conteudo-mapa {
+    padding-top: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+}
+
+.titulo-mapa {
+    font-size: 3rem;
+    font-family: var(--fonte-quaternaria);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+.padding-bottom {
+    padding-bottom: 2rem;
+}
+
+.lista-mapa > li {
+    list-style: none;
+}
+
+.gamificacao {
+    padding: 10rem 0rem;
+
+    font-family: var(--fonte-quaternaria);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.gamificacao > h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 5rem;
+    color: var(--cor-primaria);
+}
+
+.secao-de-pontos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 2rem 0;
+
+    background-color: #795b96;;
+    border-radius: 10rem;
+}
+
+.imagem-class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.imagem-class > h1 {
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.imagem-class > img {
+    width: 20%;
+    border-radius: 20rem;
+}
+
+.informacoes-usuario-game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.informacoes-usuario-game > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.informacoes-usuario-game > div > h1 {
+    color: var(--cor-primaria);
+    font-size: 2rem;
+}
+
+.informacoes-usuario-game > div > span {
+    color: var(--cor-secundaria);
+    font-size: 1.6rem;
+}
+
+.informacoes-usuario-game > div > p {
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    text-align: center;
+    width: 70%;
+}

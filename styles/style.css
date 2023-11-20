@@ -164,6 +164,19 @@ input::placeholder {
     transition: 1s;
 }
 
+.recupera-senha {
+    text-align: center;
+    font-size: 0;
+    font-family: var(--fonte-quaternaria);
+    font-weight: 400;
+
+    visibility: hidden;
+
+    width: 0;
+
+    transition: 1s;
+}
+
 .button-submit {
     padding: 0;
     border-radius: 1rem;
@@ -254,6 +267,25 @@ input::placeholder {
     transition: 1s;
 }
 
+.estiliza-recupera-senha {
+    font-size: 0.9rem;
+    width: 10rem;
+    font-family: var(--fonte-quaternaria);
+    font-weight: 400;
+
+    padding-top: 1rem;
+
+    visibility: visible;
+
+    transition: 1s;
+}
+
+.estiliza-recupera-senha:hover {
+    color: white;
+
+    transition: 1s;
+}
+
 .estiliza-button {
     padding: 0.3rem 3rem;
     margin-top: 1rem;
@@ -280,7 +312,11 @@ input::placeholder {
 /* Inicio da estilização do first-content*/
 
 .first-content {
-    padding: 10rem 0;
+    padding: 15rem 0;
+
+    background-image: url(../assets/Banner\ de\ fundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .estiliza-menu {
@@ -832,7 +868,7 @@ li > a:hover {
     align-items: center;
     gap: 2rem;
 
-    padding: 10rem 9rem;
+    padding: 10rem 2rem;
 
     font-family: var(--fonte-quaternaria);
 }

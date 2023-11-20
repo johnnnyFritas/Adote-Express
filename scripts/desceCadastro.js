@@ -8,6 +8,7 @@ const button = document.querySelector('.button-submit');
 const div1 = document.querySelector('#div1');
 const div2 = document.querySelector('#div2');
 const borda = document.querySelector('#cadastrar');
+const recuperaSenha = document.querySelector('#recupera-senha');
 var cont = 0;
 
 //eventos utilizados!
@@ -43,6 +44,9 @@ function desceLogin() {
     senha.classList.add('estiliza-input');
     senha.classList.remove('senha');
 
+    recuperaSenha.classList.add('estiliza-recupera-senha');
+    recuperaSenha.classList.remove('recupera-senha');
+
     button.classList.add('estiliza-button');
     button.classList.remove('button-submit');
 
@@ -67,6 +71,9 @@ function sobeLogin() {
     senha.classList.remove('estiliza-senha');
     senha.classList.remove('estiliza-input');
     senha.classList.add('senha');
+
+    recuperaSenha.classList.remove('estiliza-recupera-senha');
+    recuperaSenha.classList.add('recupera-senha');
 
     button.classList.remove('estiliza-button');
     button.classList.add('button-submit');
